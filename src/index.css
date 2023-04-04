@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    /* background-color: #3369FF; */
+}
+
+.user{
+    margin-left: auto;
+    background-color: #3369FF;
+    color: white;
+    border-radius: 50px 0px 50px 50px;
+}
+
+.ai{
+    background-color: #EEEE;
+    color: #656565;
+    border-radius: 50px 50px 50px 0px;
+    margin-left: 26px;
+}
+
+.message{
+    width: fit-content;
+    padding: 24px;
+    max-width: 80%;
+    margin-bottom: 4px;
+}
+
+.dropdown__header, .dropdown__list{
+    min-width: 200px;
+}
+
+.dropdown__list{
+    max-height: 193px;
+    overflow-y: auto;
+}
+
+.dropdown__list__item{
+    padding: 8px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #EEEE;
+}
+
+.dropdown__list__item:last-child{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.dropdown__list__item:hover{
+    background-color: #EEEE;
+}
+
+/*  scroll bar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar:horizontal {
+    background-color: transparent;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+    background-color: #3369FF;
+}
+
+.message-container::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+
+}
+
+.message-container::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+.message-container::-webkit-scrollbar-button:start:increment, .message-container::-webkit-scrollbar-button:end:increment{
+    height: 2%;
+    display: block;
+    background: transparent;
+}
